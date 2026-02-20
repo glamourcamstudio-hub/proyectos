@@ -4,7 +4,7 @@ import streamlit as st
 questions = [
     {
         "num": 1,
-        "text": "¿Cuál es tu ARQUETIPO? Cuando te diriges a las personas, utilizas palabras...",
+        "text": "Cuando te diriges a las personas, utilizas palabras...",
         "options": {
             "a": "Impositivas, acusadoras, de reclamo.",
             "b": "De cortesía, educadas, simpáticas, neutras.",
@@ -237,6 +237,7 @@ archetypes = {
 
 st.title("Test de Arquetipos de Personalidad")
 st.write("Responde las preguntas para descubrir tu arquetipo dominante. Ideal para conocer más de ti mismo. Gracias por hacer parte de nuestra Familia GlamourCam STUDIOS.")
+st.write("¿Cuál es tu ARQUETIPO?")
 
 scores = {"G": 0, "A": 0, "SR": 0, "M": 0}
 answers = {}
@@ -260,4 +261,5 @@ if submit:
     for key, value in scores.items():
 
         st.write(f"{archetypes[key]}: {value} puntos")
+
 
