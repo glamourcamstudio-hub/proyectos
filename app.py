@@ -236,7 +236,7 @@ archetypes = {
 }
 
 st.title("Test de Arquetipos de Personalidad")
-st.write("Responde las preguntas para descubrir tu arquetipo dominante. Ideal para perfiles como modelos webcam.")
+st.write("Responde las preguntas para descubrir tu arquetipo dominante. Ideal para conocer más de tu perfil. Gracias por hacer parte de nuestra Familia GlamourCam STUDIOS.")
 
 scores = {"G": 0, "A": 0, "SR": 0, "M": 0}
 answers = {}
@@ -258,4 +258,5 @@ if submit:
     
     st.success(f"Tu arquetipo dominante es: {', '.join(dominants)}")
     for key, value in scores.items():
+
         st.write(f"{archetypes[key]}: {value} puntos")
